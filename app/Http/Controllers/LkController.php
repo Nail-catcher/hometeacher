@@ -88,7 +88,7 @@ class LkController extends Controller
     {
         $user = Auth::user();
         $this->validate($request, [
-            'name' => 'required|max:255|unique:users,name,'.$user->id,
+            'name' => 'required|max:255'.$user->id,
             'email' => 'required|email|max:255|unique:users,email,'.$user->id,
             'second_name' => 'required|string|max:255'.$user->id,
             'class_child' => 'required|string|max:2'.$user->id,
