@@ -87,12 +87,12 @@ class ModuleController extends Controller
     public function download()
     {
        
-      return response()->download('HometeacherDemoSetup.exe');
+      return response()->download('storage/HometeacherDemoSetup.exe');
 }
  public function downloadfull()
     {
        
-      return response()->download('HometeacherSetup.exe');
+      return response()->download('storage/HometeacherSetup.exe');
 }
 
 
